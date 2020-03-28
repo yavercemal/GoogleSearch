@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 public class SeleniumTest {
 
-    public  String baseUrl="https://www.google.com/";
+    public  String baseUrl = "https://www.google.com/";
     public  WebDriver driver;
 
     @BeforeTest
     public  void setBaseUrl() {
         driver = new ChromeDriver();
         driver.get(baseUrl);
-    }
+     }
 
     @Test
     public void googleSearch() {
@@ -32,5 +32,4 @@ public class SeleniumTest {
     public void endSession() {
         driver.quit();
     }
-
 }
